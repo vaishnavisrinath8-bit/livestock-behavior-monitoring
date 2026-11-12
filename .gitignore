@@ -218,3 +218,28 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Livestock Monitoring Application Custom Ignores
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# Model Weights (downloaded automatically or placed locally)
+*.pt
+*.pth
+*.onnx
+weights/*.pt
+yolov8n.pt
+
+# Dynamic video and user data
+data/uploads/*
+data/processed/*
+!data/uploads/.gitkeep
+!data/processed/.gitkeep
+!data/sample_videos/.gitkeep
+data/test_cow.jpg
+data/sample_videos/*.mp4
+data/sample_videos/*.avi
